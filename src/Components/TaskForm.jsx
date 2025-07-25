@@ -7,6 +7,9 @@ const initialState = {
   status: "PENDING",
 };
 
+// ✅ Replace with your Render backend base URL
+const BASE_URL = "https://server-5-mjr9.onrender.com/api/tasks";
+
 const TaskForm = ({ selectedTask, setSelectedTask }) => {
   const [formData, setFormData] = useState(initialState);
 
@@ -35,10 +38,10 @@ const TaskForm = ({ selectedTask, setSelectedTask }) => {
 
     try {
       if (selectedTask) {
-        await axios.put(`http://localhost:5001/api/tasks/${selectedTask.id}`, formData);
+        await axios.put(`${BASE_URL}/${selectedTask.id}`, formData);
         setSelectedTask(null);
       } else {
-        await axios.post("http://localhost:5001/api/tasks", formData);
+        await axios.post(BASE_URL, formData);
       }
 
       setFormData(initialState);

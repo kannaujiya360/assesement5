@@ -5,9 +5,11 @@ import { Pencil, Trash2 } from "lucide-react";
 const TaskList = ({ setSelectedTask }) => {
   const [tasks, setTasks] = useState([]);
 
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
   const fetchTasks = async () => {
     try {
-      const res = await axios.get("http://localhost:5001/api/tasks");
+      const res = await axios.get(`${BASE_URL}/api/tasks`);
       setTasks(res.data);
     } catch (error) {
       console.error("Failed to fetch tasks:", error);
@@ -17,7 +19,7 @@ const TaskList = ({ setSelectedTask }) => {
   const deleteTask = async (id) => {
     if (window.confirm("Are you sure you want to delete this task?")) {
       try {
-        await axios.delete(`http://localhost:5001/api/tasks/${id}`);
+        await axios.delete(`${BASE_URL}/api/tasks/${id}`);
         fetchTasks();
       } catch (err) {
         console.error("Error deleting task:", err);
