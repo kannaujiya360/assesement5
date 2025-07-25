@@ -1,12 +1,53 @@
-# React + Vite
+# ✅ Task Management System (To-Do App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-stack **Task Management Application** built with React + javaScript + Tailwind CSS** on the frontend, and Node.js + Express + MongoDB + js   on the backend.
 
-Currently, two official plugins are available:
+Easily manage your daily tasks with a clean UI, smooth UX, and efficient backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live URLs  https://assesement5-ypuv.vercel.app/ 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Frontend: https://assesement5-ypuv.vercel.app/
+-  Backend API:  https://server-2-1449.onrender.com
+
+
+
+##  Features
+
+ Core
+- Create, update, and delete tasks
+- UUID-based task IDs
+- Input validation using **Zod**
+
+###  UI/UX
+- Fully responsive design
+
+- Beautiful, modern layout with Tailwind CSS
+
+Backend
+- RESTful API using Express
+- MongoDB Atlas for database
+- Clean architecture with MVC pattern
+
+
+## Tech Stack
+
+### Frontend:
+- React 19+
+- js
+- Tailwind CSS
+- Axios
+- React Hook Form + Zod
+- Vercel (deployment)
+
+### Backend:
+- Node.js
+- Express.js
+- js
+- MongoDB + Mongoose
+- UUID for task IDs
+- Zod for request validation
+- Render (deployment)
+
+---
