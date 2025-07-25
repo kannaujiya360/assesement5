@@ -7,7 +7,7 @@ const initialState = {
   status: "PENDING",
 };
 
-// ✅ Replace with your Render backend base URL
+
 const BASE_URL = "https://server-6-og92.onrender.com/api/tasks";
 
 const TaskForm = ({ selectedTask, setSelectedTask }) => {
@@ -87,7 +87,7 @@ const TaskForm = ({ selectedTask, setSelectedTask }) => {
       >
         <option value="PENDING">🕗 Pending</option>
         <option value="IN_PROGRESS">🚧 In Progress</option>
-        <option value="COMPLETED">✅ Completed</option>
+        <option value="COMPLETED"> Completed</option>
       </select>
 
       <div className="flex justify-between gap-4">
